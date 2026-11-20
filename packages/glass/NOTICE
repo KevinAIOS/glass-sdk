@@ -1,0 +1,5 @@
+Copyright 2026 Kevin AIOS (陈子恒).
+Derived from MentraOS, Copyright Mentra Labs and contributors. Apache-2.0.
+AIOS modifications: public names, explicit transports, application manifest.
+Original sources, hashes and transformations are recorded in provenance.json.
+"Mentra" and "MentraOS" are trademarks of their owner. This package is not affiliated with or endorsed by Mentra; no trademark rights are granted.

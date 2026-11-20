@@ -1,0 +1,355 @@
+{
+  "upstream": "https://github.com/Mentra-Community/MentraOS",
+  "baseline": "5ae6d6bf777ef7343c4c7d16d6145404d619e2de",
+  "transformations": "Public AIOS names; same miniapp wire protocol; explicit transport selection; local language registry; overrides/",
+  "files": {
+    "mobile/modules/miniapp/src/background/index.ts": {
+      "sha256": "0e7ad93610c3cd503dba7b9c1a8532e3559c476f5f1a04b42c49b7d80034ef3e",
+      "output": "src/background/index.ts"
+    },
+    "mobile/modules/miniapp/src/background/register.ts": {
+      "sha256": "f5566fbf747c345f8b0a18bfc0495604dacf7def7812783b3903d1aa75e0e4df",
+      "output": "src/background/register.ts"
+    },
+    "mobile/modules/miniapp/src/dev-reload.ts": {
+      "sha256": "122f9932ec088a39157b4c3a9ca28a505f787e03126c9681678acea1e6eac236",
+      "output": "src/dev-reload.ts"
+    },
+    "mobile/modules/miniapp/src/envelope.test.ts": {
+      "sha256": "4ccebacc99608bdf6760e9c2f3b44a278135f2d5e1f01d59b03f727b4afcc752",
+      "output": "src/envelope.test.ts"
+    },
+    "mobile/modules/miniapp/src/envelope.ts": {
+      "sha256": "4508fa757d4b6dbc411cbbcc7136c900463582c1388d4b3a6d6e5e77da1da8de",
+      "output": "src/envelope.ts"
+    },
+    "mobile/modules/miniapp/src/experience.test.ts": {
+      "sha256": "b0cd8b252a9af6bdb27be451d7ede66dec8cfc8540e6f58633c762756df57337",
+      "output": "src/experience.test.ts"
+    },
+    "mobile/modules/miniapp/src/experience.ts": {
+      "sha256": "a60ec09f265c083cd2e1d40e04b84760e91e8d13fbba5f27bc28652b20a9db35",
+      "output": "src/experience.ts"
+    },
+    "mobile/modules/miniapp/src/globals.ts": {
+      "sha256": "7c83fbaa2d967e849f9a0c8dc1f46d9e03262bec2d4fe17406b593e922ca5c58",
+      "output": "src/globals.ts"
+    },
+    "mobile/modules/miniapp/src/hardware.test.ts": {
+      "sha256": "a83334a2a02d21391566409604e610784cfcf674d9c9d223d401c24bc9f43f66",
+      "output": "src/hardware.test.ts"
+    },
+    "mobile/modules/miniapp/src/hardware.ts": {
+      "sha256": "4702289e0cb5842a71665464c572510b81c130fdecc799cef9a4c77d93ab4117",
+      "output": "src/hardware.ts"
+    },
+    "mobile/modules/miniapp/src/index.ts": {
+      "sha256": "d0552b6e7a102430afe973bf2712b44996b56338896fda32dd5fefa3e7b8bd3e",
+      "output": "src/index.ts"
+    },
+    "mobile/modules/miniapp/src/modules/actions.ts": {
+      "sha256": "2cf5bf513249a174cce9d39f89a5ef7a9d5f3d45ac3c6782225919996b0b686d",
+      "output": "src/modules/actions.ts"
+    },
+    "mobile/modules/miniapp/src/modules/auth.ts": {
+      "sha256": "c143b016d8494f511bc5bc35415a9a9985bd669b6681bc186ff93a8df54b2f6b",
+      "output": "src/modules/auth.ts"
+    },
+    "mobile/modules/miniapp/src/modules/base64.test.ts": {
+      "sha256": "ed4f86152378045c23e7a8b1822961e3c5b6d7873938000e53a0404debc76dc1",
+      "output": "src/modules/base64.test.ts"
+    },
+    "mobile/modules/miniapp/src/modules/base64.ts": {
+      "sha256": "6d8a8f30bb92bd4b25b90188b91169c27e19b91ce5912c95bb122dd22e0bb3dc",
+      "output": "src/modules/base64.ts"
+    },
+    "mobile/modules/miniapp/src/modules/blob.ts": {
+      "sha256": "6d798ed376ea8c392bac6fa7ee52fabba41c9916abb26f19f96d09098e20831d",
+      "output": "src/modules/blob.ts"
+    },
+    "mobile/modules/miniapp/src/modules/camera.test.ts": {
+      "sha256": "05b3c6c857e7df3b9612993175b35e61c5ac533467f303a5b01b6362a3076dbf",
+      "output": "src/modules/camera.test.ts"
+    },
+    "mobile/modules/miniapp/src/modules/camera.ts": {
+      "sha256": "6b411ad0abc96fc845a659b9078b0bfc8b365e5481a4877bf71e494b979f205d",
+      "output": "src/modules/camera.ts"
+    },
+    "mobile/modules/miniapp/src/modules/cloud.ts": {
+      "sha256": "69959f812dba9e773da233cba555d4e2cb3b0d461df64eea498b4bb1ffe89a17",
+      "output": "src/modules/cloud.ts"
+    },
+    "mobile/modules/miniapp/src/modules/dashboard.ts": {
+      "sha256": "e35d54363f6d026fa2cabb745b47cbd3a3dd8f32613713ebaed0fae11bfc426e",
+      "output": "src/modules/dashboard.ts"
+    },
+    "mobile/modules/miniapp/src/modules/display.ts": {
+      "sha256": "9788bd0508b3de7941e36cec1953f643cb78af644627074d02a7c5fa2ebbb8eb",
+      "output": "src/modules/display.ts"
+    },
+    "mobile/modules/miniapp/src/modules/events.ts": {
+      "sha256": "5e6856e77bd5065528c79c7503f278b6ef5821d40e28d1ed5c10b3042d92114f",
+      "output": "src/modules/events.ts"
+    },
+    "mobile/modules/miniapp/src/modules/glasses.ts": {
+      "sha256": "8733b4f74d31b4ee08cdf9b0dfcbed36d41cd630b3f479d82235c50e45f6605f",
+      "output": "src/modules/glasses.ts"
+    },
+    "mobile/modules/miniapp/src/modules/heading.ts": {
+      "sha256": "58fe30e8a9f5ddd5cb44ddb4f636c7be9bbc71f029f09d686660591cc0e532c7",
+      "output": "src/modules/heading.ts"
+    },
+    "mobile/modules/miniapp/src/modules/imu.ts": {
+      "sha256": "5b9f32d3af15d81dde4c70c37ab9dc63e1f79bf653e04e057d96f498c7017370",
+      "output": "src/modules/imu.ts"
+    },
+    "mobile/modules/miniapp/src/modules/input.ts": {
+      "sha256": "4abc320077257fcdaffee5c5f9f2a277dc5f1c507b95ea68932708cb7f216cea",
+      "output": "src/modules/input.ts"
+    },
+    "mobile/modules/miniapp/src/modules/interaction.ts": {
+      "sha256": "a9029acdefd7c7821278bacaeb8a3d878a3fc07e80893b99a47d759f5db7575d",
+      "output": "src/modules/interaction.ts"
+    },
+    "mobile/modules/miniapp/src/modules/interop.test.ts": {
+      "sha256": "9f8dee77d65538ef8d27fae88ba988e4266c1c81fb179e884a197d60618843da",
+      "output": "src/modules/interop.test.ts"
+    },
+    "mobile/modules/miniapp/src/modules/languages.ts": {
+      "sha256": "60bf8252cca77e07db854648f013d32a2adec5c191b2ffb12694123af509648c",
+      "output": "src/modules/languages.ts"
+    },
+    "mobile/modules/miniapp/src/modules/led.test.ts": {
+      "sha256": "3ab94fed5a70e17ef7e2891804fa65b4f823a858547d92ca5496297b15907565",
+      "output": "src/modules/led.test.ts"
+    },
+    "mobile/modules/miniapp/src/modules/led.ts": {
+      "sha256": "ebaa0a4dc48a23f4685122281f91acd3864e7d5dd3bedf2f73514930fb25a783",
+      "output": "src/modules/led.ts"
+    },
+    "mobile/modules/miniapp/src/modules/location.ts": {
+      "sha256": "9e0a3d00c3f15d06102d2d9d1cb8174eca4ca2d39cb4ff0778c2557f8425addf",
+      "output": "src/modules/location.ts"
+    },
+    "mobile/modules/miniapp/src/modules/meeting.test.ts": {
+      "sha256": "d9853ca8e33083c5e8f249d5425767718623065f93e20262cbde16d1523516ee",
+      "output": "src/modules/meeting.test.ts"
+    },
+    "mobile/modules/miniapp/src/modules/meeting.ts": {
+      "sha256": "d1117821acaf0cd839cfa01cd00d569fb31105ac332e49badf6c7e9b2c5d9d15",
+      "output": "src/modules/meeting.ts"
+    },
+    "mobile/modules/miniapp/src/modules/mic.test.ts": {
+      "sha256": "ac811c9dc5ed14f840ea32781baa2291bad80bb96f93eb7cbfe72db4a490ee9b",
+      "output": "src/modules/mic.test.ts"
+    },
+    "mobile/modules/miniapp/src/modules/mic.ts": {
+      "sha256": "7f5f0bb0e8d2c8a44885704e88f51ff36c1f5d3116634dd2154bd6e7d594c603",
+      "output": "src/modules/mic.ts"
+    },
+    "mobile/modules/miniapp/src/modules/miniapps.ts": {
+      "sha256": "961725dc8af9feccb3d10b9da69194e7247863ceb46a21143dd54985f1bac0a8",
+      "output": "src/modules/miniapps.ts"
+    },
+    "mobile/modules/miniapp/src/modules/navigation.ts": {
+      "sha256": "ddf04cd659dceeaad8eb0fe44e24ee62ba27ab4be05117ae75334f5f6db929be",
+      "output": "src/modules/navigation.ts"
+    },
+    "mobile/modules/miniapp/src/modules/perception.test.ts": {
+      "sha256": "fb7b43eaf1bc8ed86c06d6e04b8790b0c4042f2cbc620bb3010510e6828bd99c",
+      "output": "src/modules/perception.test.ts"
+    },
+    "mobile/modules/miniapp/src/modules/perception.ts": {
+      "sha256": "0eb9700302c4954d3e1701c5700744d3eeb7c1f36f7148b5f2f85df7853eb686",
+      "output": "src/modules/perception.ts"
+    },
+    "mobile/modules/miniapp/src/modules/permissions.ts": {
+      "sha256": "81dcc019f6b7eeb1ea101092c37eff68d3f6c6b5e45b6ef73a6a34dabf8afc83",
+      "output": "src/modules/permissions.ts"
+    },
+    "mobile/modules/miniapp/src/modules/phone.ts": {
+      "sha256": "7e1d563857dd945c97973e2e023324313fabc91cf6a7019ed000047867a89844",
+      "output": "src/modules/phone.ts"
+    },
+    "mobile/modules/miniapp/src/modules/pivots/engine.ts": {
+      "sha256": "ab1be8c9feb040f2398d281e0db646126d4ec2f4bb376c8320cfce3ef17b1705",
+      "output": "src/modules/pivots/engine.ts"
+    },
+    "mobile/modules/miniapp/src/modules/pivots/geometry.test.ts": {
+      "sha256": "1f630eb53c95e256702af005ba754fd286ce9bc7cbf55aa4bbf9abfaa4a074bf",
+      "output": "src/modules/pivots/geometry.test.ts"
+    },
+    "mobile/modules/miniapp/src/modules/pivots/geometry.ts": {
+      "sha256": "1264d7d252aa32d94a4662b1e3f0ed18df9568c1b8ea7b8e2ef3a481bdbb7e1f",
+      "output": "src/modules/pivots/geometry.ts"
+    },
+    "mobile/modules/miniapp/src/modules/pivots/instructions.ts": {
+      "sha256": "60d970c671e156b0cf9a4998858dc2088572e1c6809c34a5f84f3dbdf2593395",
+      "output": "src/modules/pivots/instructions.ts"
+    },
+    "mobile/modules/miniapp/src/modules/settings.ts": {
+      "sha256": "6477547fc82152cd35f16b9504068e2f719efb9929e21d220420c36719a4fa40",
+      "output": "src/modules/settings.ts"
+    },
+    "mobile/modules/miniapp/src/modules/speaker.test.ts": {
+      "sha256": "768ddd8f9572492113cd300f9cd835ee2a75d750c365f851f7adfe22e6c9e8b2",
+      "output": "src/modules/speaker.test.ts"
+    },
+    "mobile/modules/miniapp/src/modules/speaker.ts": {
+      "sha256": "58601688425794864f84ebeb0096874899035c52c69345c3c731010455ba921a",
+      "output": "src/modules/speaker.ts"
+    },
+    "mobile/modules/miniapp/src/modules/storage.ts": {
+      "sha256": "e33050d36338cccfb6ae9f1a09555cf767f985fa7fede7dbaa5090c7bf9ee6a3",
+      "output": "src/modules/storage.ts"
+    },
+    "mobile/modules/miniapp/src/modules/stream.test.ts": {
+      "sha256": "b0749cc6ce5044ad083f943e6988fbdbc1a68707a7ec4dac99faeda28e828ed1",
+      "output": "src/modules/stream.test.ts"
+    },
+    "mobile/modules/miniapp/src/modules/stream.ts": {
+      "sha256": "90fd93a9cf0686ff5242b59fa22bb3971ee0f8eb7a3ea7da19ca44669743804e",
+      "output": "src/modules/stream.ts"
+    },
+    "mobile/modules/miniapp/src/modules/system.test.ts": {
+      "sha256": "92f25a526c9fdfa60870bed498437ec0539845c6ddb2b19b156ad5afa9d443e2",
+      "output": "src/modules/system.test.ts"
+    },
+    "mobile/modules/miniapp/src/modules/system.ts": {
+      "sha256": "51d4b765dff9e386a2883635ea9331870fdf8bb7933e017c1e0b4db9d40beb6c",
+      "output": "src/modules/system.ts"
+    },
+    "mobile/modules/miniapp/src/modules/transcription.test.ts": {
+      "sha256": "ed1975f6f3c71d99d5a974e4ec0e0b3479b0f19b86c1cbd2a538a122fd807633",
+      "output": "src/modules/transcription.test.ts"
+    },
+    "mobile/modules/miniapp/src/modules/transcription.ts": {
+      "sha256": "400b8f371c5e9f9c09757904f5af61e43062e66b8e2a59952f8016908e61057f",
+      "output": "src/modules/transcription.ts"
+    },
+    "mobile/modules/miniapp/src/modules/translation.ts": {
+      "sha256": "178974c6e80fe45cea2204b01b95c3ab73e679717351a2e72ec350cb41169811",
+      "output": "src/modules/translation.ts"
+    },
+    "mobile/modules/miniapp/src/modules/ui.test.ts": {
+      "sha256": "95f2051dd8003c65c02cc7a2ee8d46c5899f81d0c7c03743f197655fc62198ed",
+      "output": "src/modules/ui.test.ts"
+    },
+    "mobile/modules/miniapp/src/modules/ui.ts": {
+      "sha256": "9b08f686186bc4965893ba956910e2a8ee1a0035aa901b4cde2a06f5008f037f",
+      "output": "src/modules/ui.ts"
+    },
+    "mobile/modules/miniapp/src/protocol.test.ts": {
+      "sha256": "a7cd0b7dc7d7b13e9a849e23b49b4636780636a12b7ed768d023edc9d7134809",
+      "output": "src/protocol.test.ts"
+    },
+    "mobile/modules/miniapp/src/protocol.ts": {
+      "sha256": "49b1ebc7b28827a34850d559d418adc8b0db2e15f46c5ff29c7f15d9d983f024",
+      "output": "src/protocol.ts"
+    },
+    "mobile/modules/miniapp/src/react/MentraProvider.tsx": {
+      "sha256": "632a70b1ea5fe13726509fb391fc0993dc0f8efa2e2c6ce3640626604d188894",
+      "output": "src/react/AiosProvider.tsx"
+    },
+    "mobile/modules/miniapp/src/react/MiniappHeader.tsx": {
+      "sha256": "e82e11491c584fca817c87455e390366f0f9c2004f243ab12bfef5ec3ed421e7",
+      "output": "src/react/MiniappHeader.tsx"
+    },
+    "mobile/modules/miniapp/src/react/capsuleHeaderLayout.ts": {
+      "sha256": "4e3d611ceb3894d2f62b88dc0868966640296f83e4a8f8a5a2bdd724be165c06",
+      "output": "src/react/capsuleHeaderLayout.ts"
+    },
+    "mobile/modules/miniapp/src/react/index.ts": {
+      "sha256": "354b61e9dc849e9d3e6fc7c415aa158e06f472402066314708d4a23b73c15753",
+      "output": "src/react/index.ts"
+    },
+    "mobile/modules/miniapp/src/react/useCapabilities.ts": {
+      "sha256": "cf080a600cac46f6a3b52f7914ad88d449b890e3b0ba1696f5e8238497e180a3",
+      "output": "src/react/useCapabilities.ts"
+    },
+    "mobile/modules/miniapp/src/react/useCapsuleHeaderStyle.test.ts": {
+      "sha256": "0097a4d5013fa3969a68370f42de3740ae2a92db5630c358ac58f61e4155d721",
+      "output": "src/react/useCapsuleHeaderStyle.test.ts"
+    },
+    "mobile/modules/miniapp/src/react/useCapsuleHeaderStyle.ts": {
+      "sha256": "413be99378f7e20a2ad093c5907be56cd31ad4a94bb2cbd5c946b562dc5cd7c7",
+      "output": "src/react/useCapsuleHeaderStyle.ts"
+    },
+    "mobile/modules/miniapp/src/react/useColorScheme.ts": {
+      "sha256": "51ab6ce46de7dc52be834a6731d31102873b0d7901935d536e10fb88834bac9c",
+      "output": "src/react/useColorScheme.ts"
+    },
+    "mobile/modules/miniapp/src/react/useConnected.ts": {
+      "sha256": "e7aab8f12f26ad983650bd7ca58334db933aa8f9f768480b364d852a43224552",
+      "output": "src/react/useConnected.ts"
+    },
+    "mobile/modules/miniapp/src/react/useRpc.ts": {
+      "sha256": "9cb80f73e8817d0ecb84731a123701c41ab2c04aaf47ebeda5513b07fa674f44",
+      "output": "src/react/useRpc.ts"
+    },
+    "mobile/modules/miniapp/src/react/useSafeArea.ts": {
+      "sha256": "8dd5c45b2125fd9d96d23269f5e89367e50c5cb44d657177516cfcac76cb1250",
+      "output": "src/react/useSafeArea.ts"
+    },
+    "mobile/modules/miniapp/src/session.test.ts": {
+      "sha256": "758ad0387372bce9777094679d75d780704aebd40cad602866d2b11a1a1f99a9",
+      "output": "src/session.test.ts"
+    },
+    "mobile/modules/miniapp/src/session.ts": {
+      "sha256": "2345fd52b2f2a397866d38ab60def743d629e6f8fa496841ee7e23f718baf675",
+      "output": "src/session.ts"
+    },
+    "mobile/modules/miniapp/src/speaker-state-and-dismissed.test.ts": {
+      "sha256": "f1c2ac09fa21cc6f2969aec20dccb7fd94e4a9ccfdc39a735ece2a52011aa436",
+      "output": "src/speaker-state-and-dismissed.test.ts"
+    },
+    "mobile/modules/miniapp/src/sub-path-types.test-d.ts": {
+      "sha256": "a25f6b2f9e9f3a17653957abfb6c97069f3d8f59e6431763a0ea2df3fcd73227",
+      "output": "src/sub-path-types.test-d.ts"
+    },
+    "mobile/modules/miniapp/src/transport/auto.ts": {
+      "sha256": "96e43eb30b91b5d32cb112e57658e1dc62e7eb764cfa476d09e34d4f3159fb00",
+      "output": "src/transport/auto.ts"
+    },
+    "mobile/modules/miniapp/src/transport/dispatch.test.ts": {
+      "sha256": "5b04353035059c5092945e86576b04a89f6ea6421dd894c5122debdc68bcf9b3",
+      "output": "src/transport/dispatch.test.ts"
+    },
+    "mobile/modules/miniapp/src/transport/dispatch.ts": {
+      "sha256": "8987c9dfaaf81c56e205c1ae3e1a3a6fcf2e28d0478973b6da1dc42710a0f3f5",
+      "output": "src/transport/dispatch.ts"
+    },
+    "mobile/modules/miniapp/src/transport/local-socket.ts": {
+      "sha256": "7393f67efa500c09a3e77ae27917bb792bec9a8d340c3e7da11ccd5a6b5d3f6e",
+      "output": "src/transport/local-socket.ts"
+    },
+    "mobile/modules/miniapp/src/transport/mock.test.ts": {
+      "sha256": "1302d48b37e864baef1c70ded59d5a46cddd98e3f62ec30878d6c09f335a406d",
+      "output": "src/transport/mock.test.ts"
+    },
+    "mobile/modules/miniapp/src/transport/mock.ts": {
+      "sha256": "78f769ed521c50484536a65555490aa14eb6ddf8c03f40bedf87f692f27ac7fc",
+      "output": "src/transport/mock.ts"
+    },
+    "mobile/modules/miniapp/src/transport/postmessage.ts": {
+      "sha256": "9045a601cda92bdf2b4a6fbed9d38669f645a85ddde5a692ab6792b6f44c3097",
+      "output": "src/transport/postmessage.ts"
+    },
+    "mobile/modules/miniapp/src/transport/types.ts": {
+      "sha256": "daafea231f31092b2d5ac0b1a3b8c4b3d825ac2285bf962c23610f04a5f6ab80",
+      "output": "src/transport/types.ts"
+    },
+    "mobile/modules/miniapp/src/ui/index.ts": {
+      "sha256": "9d12bf6650d2c6aa3f36c4a38a340f28f25b5e8dcfd12e96bc008276c9df6681",
+      "output": "src/ui/index.ts"
+    },
+    "mobile/modules/miniapp/src/v3-alignment.test.ts": {
+      "sha256": "5ad6a6f03de3c48b770000e148e0451e963819533b915bbfb228297dc3868f30",
+      "output": "src/v3-alignment.test.ts"
+    },
+    "cloud-v2/packages/protocol/src/languages.ts": {
+      "sha256": "0bd7cd4bd5acdcb3ef3f63668320aae65e1da75786b2931aa33f57c881676f9d",
+      "output": "src/internal/languages.ts"
+    }
+  }
+}

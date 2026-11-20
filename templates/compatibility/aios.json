@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "id": "local.aios.compatibility",
+  "name": "AIOS Kawaii",
+  "version": "0.1.9",
+  "entry": {
+    "background": "background/index.js",
+    "ui": "ui/index.html"
+  },
+  "capabilities": [
+    {
+      "id": "aios.input",
+      "required": false
+    },
+    {
+      "id": "aios.display",
+      "required": false
+    }
+  ],
+  "permissions": []
+}

@@ -1,0 +1,22 @@
+name: test
+on:
+  push:
+  pull_request:
+jobs:
+  sdk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.4
+      - name: Test @aios/glass
+        working-directory: packages/glass
+        run: bun install && bun test ./src
+      - name: Install CLI deps
+        working-directory: packages/glass-cli
+        run: bun install
+      - name: Smoke aios-glass create
+        run: |
+          bun packages/glass-cli/dist/cli.js create /tmp/glass-sdk-ci-app --id local.aios.ci
+          test -f /tmp/glass-sdk-ci-app/aios.json

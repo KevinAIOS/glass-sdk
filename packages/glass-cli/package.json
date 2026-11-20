@@ -1,0 +1,28 @@
+{
+  "name": "@aios/glass-cli",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "bin": {
+    "aios-glass": "dist/cli.js"
+  },
+  "engines": {
+    "bun": ">=1.2.0"
+  },
+  "files": [
+    "dist",
+    "assets",
+    "LICENSE",
+    "compatibility-origin.json"
+  ],
+  "scripts": {
+    "build": "bun build.ts"
+  },
+  "dependencies": {
+    "typescript": "5.9.3"
+  },
+  "bundledDependencies": [
+    "typescript"
+  ]
+}

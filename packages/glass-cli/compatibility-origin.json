@@ -1,0 +1,19 @@
+{
+  "baseline": "5ae6d6bf777ef7343c4c7d16d6145404d619e2de",
+  "origin": "miniapps/kawaii",
+  "files": {
+    "miniapps/kawaii/src/background/index.ts": "3f0a4e8637ed6eccb5ebadbab38068abc5d16ecba92f82f47ef923cc09b985db",
+    "miniapps/kawaii/src/ui/index.html": "a956564924c459114c8d5cffe5f90f17a63619f83d27dad289d3389840a7ab10",
+    "miniapps/kawaii/miniapp.json": "f20cac8d25db1f992e19168a93c51dcf8da06a4ab4526eb6a2d63763e2aedf8b"
+  },
+  "changes": [
+    "AIOS package imports and manifest",
+    "Original UI and face-channel behavior preserved",
+    "Display only when connected hardware exposes it; errors handled",
+    "Initial display deferred until session ready",
+    "UI confirms background response rather than treating a local click as proof",
+    "Typed channels, external UI entry, accessibility adjustments"
+  ],
+  "repository": "https://github.com/Mentra-Community/MentraOS",
+  "license": "Apache-2.0"
+}

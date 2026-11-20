@@ -1,0 +1,78 @@
+{
+  "name": "@aios/glass",
+  "version": "0.5.0",
+  "private": true,
+  "description": "AIOS Glass local application SDK",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./background": {
+      "types": "./dist/background/index.d.ts",
+      "default": "./dist/background/index.js"
+    },
+    "./ui": {
+      "types": "./dist/ui/index.d.ts",
+      "default": "./dist/ui/index.js"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "default": "./dist/react/index.js"
+    },
+    "./protocol": {
+      "types": "./dist/protocol.d.ts",
+      "default": "./dist/protocol.js"
+    },
+    "./hardware": {
+      "types": "./dist/hardware.d.ts",
+      "default": "./dist/hardware.js"
+    },
+    "./experience": {
+      "types": "./dist/experience.d.ts",
+      "default": "./dist/experience.js"
+    },
+    "./manifest": {
+      "types": "./dist/manifest.d.ts",
+      "default": "./dist/manifest.js"
+    },
+    "./package.json": "./package.json",
+    "./ui/bridge": {
+      "types": "./dist/ui/bridge.d.ts",
+      "default": "./dist/ui/bridge.js"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "eventemitter3": "5.0.1"
+  },
+  "bundledDependencies": [
+    "eventemitter3"
+  ],
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "NOTICE",
+    "provenance.json"
+  ],
+  "scripts": {
+    "build": "bun build.ts",
+    "test": "bun test ./src"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/react": "^19.0.0"
+  }
+}

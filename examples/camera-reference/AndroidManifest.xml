@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.aios.camera.reference" android:versionCode="1" android:versionName="1.0.0">
+  <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="35" />
+  <queries><package android:name="local.aios.glass" /></queries>
+  <application android:label="AIOS Camera Reference" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:allowBackup="false" android:debuggable="true">
+    <activity android:name="local.aios.camera.reference.MainActivity" android:exported="true"><intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter></activity>
+    <service android:name="local.aios.camera.reference.ReferenceService" android:label="AIOS Camera Reference" android:exported="true" android:permission="local.aios.permission.BIND_APP">
+      <intent-filter><action android:name="local.aios.glass.AIOS_APP" /></intent-filter>
+      <meta-data android:name="local.aios.protocol" android:value="1" />
+      <meta-data android:name="local.aios.permissions" android:value="CAMERA" />
+    </service>
+  </application>
+</manifest>

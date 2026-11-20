@@ -1,0 +1,39 @@
+/**
+ * Compile-time test for the two-layer SDK split.
+ *
+ * The package exports two sub-paths with distinct type-roots:
+ *   - `@aios/glass/background` exposes `MiniappSession` + module
+ *     types; it does NOT declare the `aios` global.
+ *   - `@aios/glass/ui` exposes the `AiosUiGlobal` / `AiosTyped`
+ *     types + React adapters. It deliberately does NOT declare a
+ *     `var aios` on `globalThis` — that would lock every consumer
+ *     into the SDK's default `Record<string, unknown>` channel shape
+ *     and break per-miniapp `Channels` registries via TS's `var`
+ *     declaration-merging rules. Each miniapp declares its own typed
+ *     `var aios: AiosTyped<MyChannels>` in `shared/channels.ts`.
+ *
+ * Wrong-layer imports should be caught at compile time. This file is
+ * type-only (`.test-d.ts`) — no runtime assertions. `bun typecheck` /
+ * `bun x tsc -p tsconfig.json` is the executor.
+ *
+ * NOTE: this file lives inside `src/` so it ships with the package and
+ * downstream consumers' typechecks would also catch a regression. The
+ * `@ts-expect-error` lines fail the build if the named symbol *does*
+ * become reachable on the wrong path, which is the contract we want.
+ */
+import { registerMiniapp } from "./background/index";
+import type { UIModule } from "./background/index";
+interface _TestChannels {
+    ping: {
+        at: number;
+    };
+}
+type _RegisteredHandler = Parameters<typeof registerMiniapp<_TestChannels>>[0];
+type _RegisteredSession = Parameters<_RegisteredHandler>[0];
+type _Assert<T extends true> = T;
+export type _TypedBackground = _Assert<_RegisteredSession["ui"] extends UIModule<_TestChannels> ? true : false>;
+import type { AiosTyped } from "./ui/index";
+export type _Typed = AiosTyped<{
+    foo: number;
+}>;
+export {};

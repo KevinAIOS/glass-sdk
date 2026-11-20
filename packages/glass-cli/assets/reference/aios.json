@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "id": "local.aios.reference",
+  "name": "AIOS Reference",
+  "version": "1.0.0",
+  "entry": {"background": "background/index.js", "ui": "ui/index.html"},
+  "capabilities": [],
+  "permissions": []
+}
