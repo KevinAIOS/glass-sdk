@@ -2,7 +2,7 @@
 
 第一版 SDK 与样例：开发者在可调试的 AIOS Host 上写出并侧载一个 Experience。仓库：https://github.com/KevinAIOS/glass-sdk
 
-许可为 [Apache-2.0](LICENSE)。npm 包名是 `@aios/glass`（0.5.0）和 `@aios/glass-cli`（0.2.0，命令 `aios-glass`），当前均为 `private: true`，尚未发布到 npm；请从这个 GitHub 仓库使用。仓库标签 `v0.1.0` 表示第一次公开快照，与这两个包版本号不是一回事。
+许可为 [Apache-2.0](LICENSE)。npm 包名是 `@aios/glass`（0.5.0）和 `@aios/glass-cli`（0.2.0，命令 `aios-glass`），当前均为 `private: true`，尚未发布到 npm；请从这个 GitHub 仓库使用。仓库标签 `v0.1.0` 表示第一次公开快照，与这两个包版本号不是一回事。体验编写面契约版本是 **v0.1.0**，对应上述 SDK 0.5.0 与 CLI 0.2.0；契约版本与仓库标签同号但不是同一个东西，见 [体验编写面契约](docs/体验编写面契约.md) 的版本表。
 
 设备契约在单独的公开仓库 [KevinAIOS/glass-contract](https://github.com/KevinAIOS/glass-contract)。
 
@@ -27,10 +27,11 @@ aios-glass sideload packages/<id>-<version>.zip
 - `templates/` — `create` 的三个模板：`reference`（默认，也就是计划里说的 Hello）、`compatibility`、`contacts`
 - `examples/` — `contacts`（TypeScript / `@aios/glass`）以及 4 个 Native 样例
 
+体验编写面契约已定稿，见 [体验编写面契约](docs/体验编写面契约.md)（契约版本 v0.1.0）。会话处理正路是 `registerApp(handler)`；代码型路径是 `defineExperience`（`@aios/glass/experience`）再 `registerApp(experience)`。主盘点 401 项：拟冻结 284，形状保留不冻 35，明确不进 78，留云调用类型 4。
+
 它**不是**：
 
 - **不是设备契约**：Host ↔ 眼镜怎么说话，见 [glass-contract](https://github.com/KevinAIOS/glass-contract)。
-- **不是 Experience 契约定稿**：`aios.json` 的 `experience` 字段和 `registerApp(experienceDefinition)` 重载属于后续步骤，本仓库不定稿。
 - **不是 Host↔运行时契约**：`@aios/runtime-client` 不在本仓库。
 - **不是 npm 发布**。
 
@@ -46,7 +47,7 @@ cd my-app && bun install
 bun ../packages/glass-cli/dist/cli.js build
 ```
 
-详情见 [docs/开发者正路.md](docs/开发者正路.md)。稳定面与 v1 限制见 [docs/稳定面与v1空操作.md](docs/稳定面与v1空操作.md)。会话能力见 [docs/会话能力.md](docs/会话能力.md)。
+详情见 [docs/开发者正路.md](docs/开发者正路.md)。体验编写面以 [体验编写面契约](docs/体验编写面契约.md) 为准。稳定面与 v1 限制见 [docs/稳定面与v1空操作.md](docs/稳定面与v1空操作.md)。会话能力见 [docs/会话能力.md](docs/会话能力.md)。
 
 ## 来源
 
@@ -54,6 +55,7 @@ bun ../packages/glass-cli/dist/cli.js build
 
 ## 文档
 
+- [体验编写面契约](docs/体验编写面契约.md)（契约版本 v0.1.0；对应 `@aios/glass` 0.5.0、`@aios/glass-cli` 0.2.0；与仓库标签 `v0.1.0` 不是一回事）
 - [开发者正路](docs/开发者正路.md)
 - [稳定面与 v1 空操作](docs/稳定面与v1空操作.md)
 - [会话能力](docs/会话能力.md)

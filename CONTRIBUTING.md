@@ -7,7 +7,7 @@
 - `packages/glass/` — `@aios/glass`。公开快照里的 `src/` 和 `dist/` 是已经生成好的源码与构建产物。用于从 MentraOS 原文重新生成的上游输入不在本仓库。
 - `packages/glass-cli/` — `aios-glass` 命令行（`src/`）与 `create` 模板（`assets/`）。`assets/contacts` 在构建时由 `examples/contacts` 覆盖生成。
 - `packages/native-sdk/` — Android Native SDK（Java + AIDL）。构建需要 JDK 17 与 Android SDK，见 `docs/构建.md`。
-- `examples/`、`templates/`、`docs/`。
+- `examples/`、`templates/`、`docs/`。体验编写面以 `docs/体验编写面契约.md` 为准（契约版本 v0.1.0，对应 `@aios/glass` 0.5.0、`@aios/glass-cli` 0.2.0，与仓库标签 `v0.1.0` 不是一回事）。
 
 ## 提交前
 
