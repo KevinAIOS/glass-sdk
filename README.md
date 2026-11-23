@@ -4,7 +4,7 @@
 
 许可为 [Apache-2.0](LICENSE)。npm 包名是 `@aios/glass`（0.5.0）和 `@aios/glass-cli`（0.2.0，命令 `aios-glass`），当前均为 `private: true`，尚未发布到 npm；请从这个 GitHub 仓库使用。仓库标签 `v0.1.0` 表示第一次公开快照，与这两个包版本号不是一回事。体验编写面契约版本是 **v0.1.0**，对应上述 SDK 0.5.0 与 CLI 0.2.0；契约版本与仓库标签同号但不是同一个东西，见 [体验编写面契约](docs/体验编写面契约.md) 的版本表。
 
-设备契约在单独的公开仓库 [KevinAIOS/glass-contract](https://github.com/KevinAIOS/glass-contract)。
+设备契约在单独的公开仓库 [KevinAIOS/glass-contract](https://github.com/KevinAIOS/glass-contract)。Host↔运行时契约在单独的公开仓库 [KevinAIOS/host-runtime-contract](https://github.com/KevinAIOS/host-runtime-contract)（契约版本 v0.1.0，与本仓库标签或体验编写面契约的 v0.1.0 不是同一份）。
 
 ## 这是什么
 
@@ -32,7 +32,7 @@ aios-glass sideload packages/<id>-<version>.zip
 它**不是**：
 
 - **不是设备契约**：Host ↔ 眼镜怎么说话，见 [glass-contract](https://github.com/KevinAIOS/glass-contract)。
-- **不是 Host↔运行时契约**：`@aios/runtime-client` 不在本仓库。
+- **不是 Host↔运行时契约**：见 [KevinAIOS/host-runtime-contract](https://github.com/KevinAIOS/host-runtime-contract)。`@aios/runtime-client` 不在本仓库。那份契约的 v0.1.0 与本仓库标签或体验编写面契约的 v0.1.0 不是同一份。
 - **不是 npm 发布**。
 
 ## 从本仓库起步
